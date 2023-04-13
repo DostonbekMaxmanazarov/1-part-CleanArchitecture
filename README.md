@@ -1,7 +1,7 @@
 # 1-Part.CleanArchitecture
 Separation of concerns, Recommended app architecture
 
-***Siz ko'rib turgan projectimda, userning malumotlarini saqlash va olish uchun simple project qilingan. Ma'lumotlarni saqlash uchun SharedPreferencedan foydalanilgan***
+***Siz ko'rib turgan projectimda, authorization uchun simple project qilingan. Ma'lumotlarni saqlash uchun SharedPreferencedan foydalanilgan. Bunda oddiygina yondashilgan, chunki vazifamiz layerlarga ajratish.***
 
 <img width="540" height="540" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png">
 
