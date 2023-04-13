@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--layout height-->
+    <dimen name="height_48">48dp</dimen>
+    <!--margin-->
+    <dimen name="margin_32">32dp</dimen>
+    <!--padding-->
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+</resources>

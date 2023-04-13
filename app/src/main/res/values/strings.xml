@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CleanArchitecture</string>
+    <string name="first_name">First name</string>
+    <string name="first_name_dot">First name:</string>
+    <string name="get_user_data">Get user data</string>
+    <string name="last_name_dot">Last name:</string>
+    <string name="last_name">Last name</string>
+    <string name="save_data">Save data</string>
+</resources>
