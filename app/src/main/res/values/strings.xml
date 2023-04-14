@@ -6,4 +6,16 @@
     <string name="last_name_dot">Last name:</string>
     <string name="last_name">Last name</string>
     <string name="save_data">Save data</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="do_you_have_an_account">Do you have an account?</string>
+    <string name="password_requirement_characters">At least 8 characters</string>
+    <string name="password_requirement_capital">At least 1 upper-case letter</string>
+    <string name="password_requirement_digit">At least 1 digit</string>
+    <string name="failed">Failed</string>
+    <string name="success">Success</string>
 </resources>

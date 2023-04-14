@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_24"
+    tools:context=".presentation.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/BoldTextView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPhoneNumber"
+        style="@style/BasicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_42"
+        android:layout_marginTop="128dp"
+        android:hint="@string/enter_phone_number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/heather"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
+        style="@style/BasicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_42"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/heather"
+        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_48"
+        android:layout_marginBottom="@dimen/margin_56"
+        android:text="@string/login"
+        android:textSize="@dimen/textSize_14"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

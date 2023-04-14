@@ -8,12 +8,35 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <!--EditText style-->
     <style name="BasicEditText">
         <item name="android:background">@drawable/bg_basic_edit_text</item>
         <item name="android:gravity">center|start</item>
         <item name="android:paddingStart">@dimen/padding_12</item>
         <item name="android:paddingEnd">@dimen/padding_12</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/textSize_12</item>
     </style>
 
+    <!--TextView-->
+    <style name="BasicTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_12</item>
+    </style>
+
+    <style name="BoldTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_22</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_12</item>
+        <item name="android:typeface">serif</item>
+    </style>
 </resources>
