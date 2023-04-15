@@ -2,6 +2,7 @@
 Separation of concerns, Recommended app architecture
 
 ***Siz ko'rib turgan projectimda, authorization uchun simple project qilingan. Ma'lumotlarni saqlash uchun SharedPreferencedan foydalanilgan. Bunda oddiygina yondashilgan, chunki vazifamiz layerlarga ajratish.***
+-----------------------------------
 
 <img width="360" height="480" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png"> <img hspace="20" width="360" height="480" alt="Screen Shot 2023-04-15 at 12 47 53" src="https://user-images.githubusercontent.com/77477995/232197173-3e675faf-4722-424a-9799-f7538856613f.png">
 
@@ -35,6 +36,8 @@ Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat b
 
 Eslatma!
 *Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
+
+#### 1.
 
 ```kotlin 
 class LoginFragment : Fragment(R.layout.fragment_login) {
@@ -78,8 +81,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             if (success) Toast.makeText(requireContext(), R.string.success, Toast.LENGTH_SHORT).show()
             else Toast.makeText(requireContext(), R.string.failed, Toast.LENGTH_SHORT).show()
         }
-    }
-    ```
+}```
+
 
 ***Xulosa***
 
