@@ -3,8 +3,7 @@ Separation of concerns, Recommended app architecture
 
 ***Siz ko'rib turgan projectimda, authorization uchun simple project qilingan. Ma'lumotlarni saqlash uchun SharedPreferencedan foydalanilgan. Bunda oddiygina yondashilgan, chunki vazifamiz layerlarga ajratish.***
 
-<img width="360" height="360" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png"> <img width="360" height="360" alt="Screen Shot 2023-04-15 at 12 44 38" src="https://user-images.githubusercontent.com/77477995/232196874-7ae1e988-4c40-4112-97e4-1e78de7689a6.png">
-
+<img width="360" height="420" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png"> <img width="360" height="420" alt="Screen Shot 2023-04-15 at 12 47 53" src="https://user-images.githubusercontent.com/77477995/232197173-3e675faf-4722-424a-9799-f7538856613f.png">
 
 *1 - rasm. Projectimdagi structura qatlamlarni ko'rishingiz mumkin*
 
