@@ -36,6 +36,36 @@ Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat b
 Eslatma!
 *Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
 
+```kotlin class LoginFragment : Fragment(R.layout.fragment_login) {
+
+    private var _binding: FragmentLoginBinding? = null
+    private val binding get() = _binding!!
+
+    private val authStorage: AuthStorage by lazy(LazyThreadSafetyMode.NONE) {
+        AuthStorageSharedPrefImpl(context = requireContext())
+    }
+
+    private val saveAuthParamMapToStorage = SaveAuthenticationParamMapToStorage()
+    private val authRequestMapToDomain = AuthenticationRequestMapToDomain()
+
+    private val authRepository: AuthRepository by lazy(LazyThreadSafetyMode.NONE) {
+        AuthRepositoryImpl(
+            authStorage = authStorage,
+            saveAuthParamMapToStorage = saveAuthParamMapToStorage,
+            authRequestMapToDomain = authRequestMapToDomain
+        )
+    }
+    private val getAuthUseCase: GetAuthUseCase by lazy(LazyThreadSafetyMode.NONE) {
+        GetAuthUseCaseImpl(authRepository = authRepository)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentLoginBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+        initClickView()
+    }
+}```
+
 ***Xulosa***
 
 Umuman olganda, toza arxitektura ishlab chiquvchilarga moslashuvchan, kengaytiriladigan va o'zgaruvchan talablarga moslashtiriladigan yuqori sifatli, dasturiy ta'minotni yaratishga yordam beradi.
