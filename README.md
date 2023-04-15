@@ -34,10 +34,10 @@ Bunda projectimiz qatlamlari 3 qismdan iborat
 **```Data layer```** - Bu qatlam Ilovamiz ma'lumotlarni qanday yaratishi, saqlashi va o'zgartirishini belgilaydigan qoidalardan iborat.
 Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat bo'lishi yoki malumotlarni serverdan yuklash uchun network servicelari bo'lishi mumkin. Data qatlam ma'lumotlar logikasi bilan ishlash uchun Repositorylardan iborat bo'ladi, Ilovamizda ishlatadigan har bir turdagi ma'lumotlar uchun Repository classini yaratishimiz kerak. Masalan Userga bog'liq ma'lumotlar uchun UserRepository classini yaratishimiz mumkin.
 
-***Xulosa***
+**Xulosa!**
 Umuman olganda, toza arxitektura ishlab chiquvchilarga moslashuvchan, kengaytiriladigan va o'zgaruvchan talablarga moslashtiriladigan yuqori sifatli, dasturiy ta'minotni yaratishga yordam beradi.
 
-Eslatma!
+**Eslatma!**
 *Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
 
 #### 1.
