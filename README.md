@@ -85,5 +85,4 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
 
 ***Xulosa***
-
 Umuman olganda, toza arxitektura ishlab chiquvchilarga moslashuvchan, kengaytiriladigan va o'zgaruvchan talablarga moslashtiriladigan yuqori sifatli, dasturiy ta'minotni yaratishga yordam beradi.
