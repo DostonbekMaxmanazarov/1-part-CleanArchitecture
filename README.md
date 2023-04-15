@@ -5,7 +5,7 @@ Separation of concerns, Recommended app architecture
 
 <img width="360" height="480" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png"> <img hspace="20" width="360" height="480" alt="Screen Shot 2023-04-15 at 12 47 53" src="https://user-images.githubusercontent.com/77477995/232197173-3e675faf-4722-424a-9799-f7538856613f.png">
 
-*1 - rasm. Projectimdagi structura qatlamlarni ko'rishingiz va classlarimizning layerlarda qanday joylashgan diagrammasini ko'rishingiz mumkin.*
+*1 - rasm. Projectimdagi structura qatlamlarni va classlarimizning layerlarda qanday joylashgan diagrammasini ko'rishingiz mumkin.*
 
 Android proyekt kattalashib yangi funksionalliklar qo'shilavergan sayin, proyektni oson boshqarish imkonini beruvchi, proyekt mustahkamligini oshiradigan va proyektni testdan o‘tkazishni osonlashtiradigan arxitekturani aniqlash muhim ahamiyatga ega [Clean architecture](https://developer.android.com/topic/architecture).
 >
