@@ -2,7 +2,6 @@
 #### *Separation of concerns, Recommended app architecture and MultiModule. This project is simply a user authorization project.*
 
 > #### *Siz ko'rib turgan projectimda, authorization uchun simple project qilingan. Ma'lumotlarni saqlash uchun SharedPreferencedan foydalanilgan. Bunda oddiygina yondashilgan, Design patternlar va Dependency Injection framworklaridan foydalanilmasdan clean architecturaga kirish qilganman, chunki vazifamiz layerlarga ajratish.*
--------------------------------------
 
 <img width="360" height="480" alt="Screen Shot 2023-04-15 at 15 46 15" src="https://user-images.githubusercontent.com/77477995/232209320-83106c6c-1bee-42e0-8ded-a3a5793a67dd.png"> <img hspace="20" width="360" height="480" alt="Screen Shot 2023-04-15 at 12 47 53" src="https://user-images.githubusercontent.com/77477995/232197173-3e675faf-4722-424a-9799-f7538856613f.png">
 
