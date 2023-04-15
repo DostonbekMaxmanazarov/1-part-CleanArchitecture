@@ -36,7 +36,8 @@ Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat b
 Eslatma!
 *Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
 
-```kotlin class LoginFragment : Fragment(R.layout.fragment_login) {
+```kotlin 
+class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
@@ -64,7 +65,21 @@ Eslatma!
         super.onViewCreated(view, savedInstanceState)
         initClickView()
     }
-}```
+
+    private fun initClickView() = binding.apply {
+        btnLogin.setOnClickListener {
+            val phoneNumber = etPhoneNumber.text.toString()
+            val password = etPassword.text.toString()
+            val loginParam = LoginParam(
+                phoneNumber = phoneNumber,
+                password = password
+            )
+            val success = getAuthUseCase(param = loginParam)
+            if (success) Toast.makeText(requireContext(), R.string.success, Toast.LENGTH_SHORT).show()
+            else Toast.makeText(requireContext(), R.string.failed, Toast.LENGTH_SHORT).show()
+        }
+    }
+    ```
 
 ***Xulosa***
 
