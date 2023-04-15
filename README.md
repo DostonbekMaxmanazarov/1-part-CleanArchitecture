@@ -5,7 +5,7 @@ Separation of concerns, Recommended app architecture
 
 <img width="360" height="480" alt="Screen Shot 2023-04-09 at 12 58 44" src="https://user-images.githubusercontent.com/77477995/230761313-5dcf0953-ce38-409b-94b2-570a55a865a5.png"> <img hspace="20" width="360" height="480" alt="Screen Shot 2023-04-15 at 12 47 53" src="https://user-images.githubusercontent.com/77477995/232197173-3e675faf-4722-424a-9799-f7538856613f.png">
 
-*1 - rasm. Projectimdagi structura qatlamlarni va classlarimizning layerlarda qanday joylashgan diagrammasini ko'rishingiz mumkin.*
+*1 - rasm. Projectimdagi structura qatlamlarni ko'rishingiz va classlarimizning layerlarda qanday joylashgan diagrammasini ko'rishingiz mumkin.*
 
 Android proyekt kattalashib yangi funksionalliklar qo'shilavergan sayin, proyektni oson boshqarish imkonini beruvchi, proyekt mustahkamligini oshiradigan va proyektni testdan o‘tkazishni osonlashtiradigan arxitekturani aniqlash muhim ahamiyatga ega [Clean architecture](https://developer.android.com/topic/architecture).
 >
@@ -31,7 +31,10 @@ Bunda projectimiz qatlamlari 3 qismdan iborat
 **```Domain layer```** - UI va Data qatlamlari o'rtasidagi o'zaro aloqalarni soddalashtirish va qayta ishlatish uchun Biz Domen qatlamidan foydalanamiz. Va asosiy biznes logikalarni shu qatlamda bajaramiz.
 
 **```Data layer```** - Bu qatlam Ilovamiz ma'lumotlarni qanday yaratishi, saqlashi va o'zgartirishini belgilaydigan qoidalardan iborat.
-Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat bo'lishi yoki malumotlarni serverdan yuklash uchun network servicelari bo'lishi mumkin.Data qatlam malumotlar logikasi bilan ishlash uchun Repositorylardan iborat bo'ladi, Ilovamizda ishlatadigan har bir turdagi ma'lumotlar uchun Repository classini yaratishimiz kerak. Masalan Userga bog'liq ma'lumotlar uchun UserRepository classini yaratishimiz mumkin.
+Data qatlami ko'p ma'lumot o'z ichiga olishi mumkin bo'lgan databasedan iborat bo'lishi yoki malumotlarni serverdan yuklash uchun network servicelari bo'lishi mumkin. Data qatlam ma'lumotlar logikasi bilan ishlash uchun Repositorylardan iborat bo'ladi, Ilovamizda ishlatadigan har bir turdagi ma'lumotlar uchun Repository classini yaratishimiz kerak. Masalan Userga bog'liq ma'lumotlar uchun UserRepository classini yaratishimiz mumkin.
+
+Eslatma!
+*Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
 
 ***Xulosa***
 
