@@ -40,7 +40,6 @@ Umuman olganda, toza arxitektura ishlab chiquvchilarga moslashuvchan, kengaytiri
 **Eslatma!**
 Ushbu proektimda faqatgina layerlarga ajratilib, classlar qo'lda kiritilgan, bunda dependency injection frameworklaridan va design patternlar(Mvvm, Mvp...) dan foydalanilmagan, sababi clean architecturani tushunish uchun bu yo'lni tanlaganman, chunki dependencylarni qo'lda kiritish qanchalik noqulat va murakkablashib ketishini ko'rishimiz mumkin, bu yo'l orqali dependency injection texnologiyalarni yaxshi tushunib olishimizni nazarda tutganman, Bunda design patternlarning ham proektimizdagi o'rnini bilib olishimiz mumkin. Clean architectura uchun kerakli bo'lgan texnologiyalarni qadam va qadam github repositoryamdan ko'rishingiz mumkin. *
 
-#### 1.
 
 ```kotlin 
 class LoginFragment : Fragment(R.layout.fragment_login) {
